@@ -14,9 +14,9 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	{
 		left_h = binary_tree_height(tree->left);
 		right_h = binary_tree_height(tree->right);
-		tree_h += c_max(left_h, right_h);
+		tree_h = c_max(left_h, right_h);
 		printf("tree_h = %lu, left_h = %lu, right_h = %lu", tree_h, left_h, right_h);
-		return (tree_h);
+		return (tree_h + 1);
 	}
 	else
 		return (0);
