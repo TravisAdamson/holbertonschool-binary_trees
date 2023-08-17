@@ -7,13 +7,13 @@
  *
  * Return: The balance of the tree, or 0 if NULL
  */
-int binary_tree_balance(const binary_tree_t *tree)
+int binary_tree_is_full(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
 	if (tree->left == NULL && tree->right == NULL)
 		return (0);
 	if (tree->left != NULL && tree->right != NULL)
-		return (binary_tree_balance(tree->left) && binary_tree_balance(tree->right));
+		return (binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
 	return (1);
 }
