@@ -18,6 +18,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	right_s = binary_tree_size(tree->right);
 	full = binary_tree_is_full(tree);
 	if ((left_s == right_s) && (full == 1))
-		return(1);
+		return (1);
 	return (0);
 }
