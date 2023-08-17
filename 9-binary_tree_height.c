@@ -12,7 +12,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	if (tree != NULL)
 	{
-		height = 1 + stdlib_max(binary_tree_height(tree->left), binary_tree_height(tree->right));
+		height = stdlib_max(binary_tree_height(tree->left), binary_tree_height(tree->right));
 		return (height);
 	}
 	else
