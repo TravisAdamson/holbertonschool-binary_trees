@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_sibling - Checs if the node has any siblings
- * @tree: The tree to traverse
+ * @node: The node sent to use to look for a sibling
  *
  * Return: A pointer to the sibling node, or NULL
  */
